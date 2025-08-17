@@ -1,0 +1,12 @@
+# program to print a grid using list
+
+grid = [
+    ["-","-","-"],
+    ["-","-","-"],
+    ["-","-","-"]
+]
+
+for r in grid:
+    for c in r:
+        print(c, end=" ")
+    print()
