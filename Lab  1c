@@ -17,3 +17,26 @@ while guess != num:
     else:
         print("You got it! number is", num)
         print("Tries:", count)
+or 
+# number guessing game
+
+import random
+
+num = random.randint(1,10)   # secret number
+guess = 0
+tries = 0
+
+print("Guess the number between 1 and 10")
+
+while guess != num:
+    guess = int(input("Enter your guess: "))
+    tries = tries + 1
+
+    if guess < num:
+        print("Your guess is small")
+    elif guess > num:
+        print("Your guess is big")
+    else:
+        print("You guessed right! Number is", num)
+        print("Total tries:", tries)
+
