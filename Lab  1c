@@ -1,23 +1,4 @@
-# program for number guessing game
 
-import random
-num = random.randint(1,10)
-guess = 0
-count = 0
-
-print("Guess a number from 1 to 10")
-
-while guess != num:
-    guess = int(input("Enter guess: "))
-    count = count + 1
-    if guess < num:
-        print("Too low")
-    elif guess > num:
-        print("Too high")
-    else:
-        print("You got it! number is", num)
-        print("Tries:", count)
-or 
 # number guessing game
 
 import random
